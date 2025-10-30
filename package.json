@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "smtf-dashboard",
   "private": true,
   "scripts": {
     "build": "turbo run build",
