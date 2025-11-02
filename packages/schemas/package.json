@@ -1,0 +1,44 @@
+{
+  "name": "@smtf/schemas",
+  "version": "0.0.1",
+  "description": "Smtf schemas definitions",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Smtf",
+  "keywords": [
+    "zod",
+    "schema",
+    "validation"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "lint": "eslint",
+    "lint:fix": "pnpm run lint -- --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@smtf/eslint-config": "workspace:*",
+    "@types/node": "^24.9.2",
+    "eslint": "^9.39.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
