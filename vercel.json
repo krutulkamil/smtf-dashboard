@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "functions": {
+    "services/dashboard-api/api/index.ts": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "services/dashboard-api/api/index.ts" }
+  ]
+}
