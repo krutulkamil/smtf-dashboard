@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "es2022",
+    "jsx": "react-jsx",
+    "module": "preserve",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "strictNullChecks": true,
+    "erasableSyntaxOnly": true,
+    "paths": {
+      "src/*": ["./src/*"]
+    },
+    "types": ["vitest/globals", "node"],
+    "allowJs": true,
+  },
+  "include": ["**/*.tsx", "**/*.ts", "**/*.js", "**/*.mjs", ".storybook/*"],
+  "exclude": ["dist"],
+}

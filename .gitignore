@@ -36,3 +36,8 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Coverage Reports
+coverageReport
+*storybook.log
+storybook-static
