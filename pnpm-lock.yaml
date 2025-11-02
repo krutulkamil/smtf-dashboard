@@ -341,7 +341,7 @@ importers:
         specifier: ^11.0.1
         version: 11.1.8(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8)(@nestjs/platform-express@11.1.8)
       '@smtf/schemas':
-        specifier: file:../../packages/schemas
+        specifier: workspace:*
         version: link:../../packages/schemas
       '@types/express':
         specifier: ^5.0.0
