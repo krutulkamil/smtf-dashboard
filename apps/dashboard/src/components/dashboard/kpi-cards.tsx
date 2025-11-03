@@ -1,5 +1,5 @@
 import { DashboardCard, Grid } from '@smtf/ui-library';
-import { type DashboardResponse } from '@smtf/schemas';
+import type { DashboardResponse } from '@smtf/schemas';
 
 type Props = {
   data: DashboardResponse;

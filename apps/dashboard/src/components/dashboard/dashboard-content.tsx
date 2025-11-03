@@ -1,12 +1,13 @@
+import { ClientOnly } from '@tanstack/react-router';
 import { PageContainer, UiBadge } from '@smtf/ui-library';
 import { TrendingUp } from 'lucide-react';
-import { type DashboardResponse } from '@smtf/schemas';
+import type { DashboardResponse } from '@smtf/schemas';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { DashboardHeader } from '@/components/dashboard/dashboard-header';
-import { KPICards } from '@/components/dashboard/kpi-cards';
-import { TrendChart } from '@/components/dashboard/trend-chart';
-import { cn } from '@/lib/utils';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
+import { DashboardHeader } from '~/components/dashboard/dashboard-header';
+import { KPICards } from '~/components/dashboard/kpi-cards';
+import { TrendChart } from '~/components/dashboard/trend-chart';
+import { cn } from '~/lib/utils';
 
 type Props = {
   data: DashboardResponse;
@@ -35,7 +36,9 @@ export const DashboardContent = ({ data }: Props) => {
                 </div>
               </CardHeader>
               <CardContent>
-                <TrendChart trend={data.trend} />
+                <ClientOnly>
+                  <TrendChart trend={data.trend} />
+                </ClientOnly>
               </CardContent>
             </Card>
           </div>

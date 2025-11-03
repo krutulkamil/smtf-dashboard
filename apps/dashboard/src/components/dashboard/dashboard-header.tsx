@@ -1,4 +1,4 @@
-import { ModeToggle } from '@/components/layout/mode-toggle';
+import { ModeToggle } from '~/components/layout/mode-toggle';
 
 export const DashboardHeader = () => {
   return (
