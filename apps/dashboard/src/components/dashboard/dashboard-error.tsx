@@ -1,9 +1,9 @@
 import { AlertCircle } from 'lucide-react';
-import { UiBadge, PageContainer } from '@smtf/ui-library';
+import { PageContainer, UiBadge } from '@smtf/ui-library';
 
-import { Card, CardTitle, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { DashboardHeader } from '@/components/dashboard/dashboard-header';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
+import { Button } from '~/components/ui/button';
+import { DashboardHeader } from '~/components/dashboard/dashboard-header';
 
 type Props = {
   onClickTryAgain: () => void;
