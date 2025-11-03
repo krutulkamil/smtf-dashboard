@@ -1,22 +1,22 @@
 import { useState } from 'react';
 import {
-  LineChart,
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
   Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
   XAxis,
   YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-  BarChart,
-  Bar,
 } from 'recharts';
-import { type TrendPoint } from '@smtf/schemas';
+import type { TrendPoint } from '@smtf/schemas';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '~/components/ui/button';
 
 type Props = {
-  trend: TrendPoint[];
+  trend: Array<TrendPoint>;
 };
 
 type Trend = 'line' | 'bar';
