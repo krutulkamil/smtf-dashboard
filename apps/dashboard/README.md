@@ -1,72 +1,125 @@
-# Welcome to TanStack.com!
+# @smtf/dashboard
 
-This site is built with TanStack Router!
+A small showcase application built with TanStack Start and TanStack Router. It renders a one‑page, responsive dashboard that:
+- Fetches and displays live data from the backend service in `services/dashboard-api`
+- Showcases UI components from `@smtf/ui-library` (React wrappers and shared styles)
+- Demonstrates loading states, error boundaries, and basic routing
 
-- [TanStack Router Docs](https://tanstack.com/router)
+This app is meant to be a simple, opinionated example of how the pieces of this monorepo work together.
 
-It's deployed automagically with Netlify!
 
-- [Netlify](https://netlify.com/)
+## Why TanStack Start + TanStack Router?
+TanStack Start is a lightweight application framework around TanStack Router that brings modern routing ergonomics to React apps without the heavy framework lock‑in.
 
-## Development
+Highlights:
+- File‑based routing and nested layouts for clean structure
+- Data loading at the route level (loaders) with first‑class pending/loading UI
+- Error boundaries per route/layout for robust failure handling
+- Great DX with Router Devtools and React 18 support
+- Works great with Vite for fast local development
 
-From your terminal:
+Learn more:
+- TanStack Start: https://tanstack.com/router/latest/docs/framework/react-start
+- TanStack Router: https://tanstack.com/router
 
-```sh
+
+## Features in this app
+- Dashboard data fetched from the NestJS backend: `services/dashboard-api`
+- Components from the shared UI library: `@smtf/ui-library`
+- Responsive layout and charts (e.g. with `recharts`)
+- Loading states and error boundaries via TanStack Router patterns
+- Code quality: ESLint (shared config) and Prettier
+
+
+## Getting started
+From this directory:
+
+First, create your environment file:
+```bash
+cp .env.example .env
+```
+
+Then install dependencies and start the dev server:
+```bash
 pnpm install
 pnpm dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+This starts the app in development mode at the port configured by Vite (commonly http://localhost:5173). Edits trigger fast HMR.
 
-## Editing and previewing the docs of TanStack projects locally
-
-The documentations for all TanStack projects except for `React Charts` are hosted on [https://tanstack.com](https://tanstack.com), powered by this TanStack Router app.
-In production, the markdown doc pages are fetched from the GitHub repos of the projects, but in development they are read from the local file system.
-
-Follow these steps if you want to edit the doc pages of a project (in these steps we'll assume it's [`TanStack/form`](https://github.com/tanstack/form)) and preview them locally :
-
-1. Create a new directory called `tanstack`.
-
-```sh
-mkdir tanstack
+Build for production:
+```bash
+pnpm build
 ```
 
-2. Enter the directory and clone this repo and the repo of the project there.
-
-```sh
-cd tanstack
-git clone git@github.com:TanStack/tanstack.com.git
-git clone git@github.com:TanStack/form.git
+Start a preview server (if applicable in your setup):
+```bash
+pnpm start
 ```
 
-> [!NOTE]
-> Your `tanstack` directory should look like this:
->
-> ```
-> tanstack/
->    |
->    +-- form/
->    |
->    +-- tanstack.com/
-> ```
+> Note: For dashboard data to load, run the backend as well. See `services/dashboard-api/README.md` for environment setup and run commands. The API defaults to `http://localhost:3000` with Swagger at `/api`.
 
-> [!WARNING]
-> Make sure the name of the directory in your local file system matches the name of the project's repo. For example, `tanstack/form` must be cloned into `form` (this is the default) instead of `some-other-name`, because that way, the doc pages won't be found.
 
-3. Enter the `tanstack/tanstack.com` directory, install the dependencies and run the app in dev mode:
+## Using the shared UI library
+Import the base styles once and consume components as regular React components.
 
-```sh
-cd tanstack.com
-pnpm i
-# The app will run on https://localhost:3000 by default
-pnpm dev
+```tsx
+// src/main.tsx or your app entry
+import '@smtf/ui-library/styles.css'
+// import { Button } from '@smtf/ui-library'
 ```
 
-4. Now you can visit http://localhost:3000/form/latest/docs/overview in the browser and see the changes you make in `tanstack/form/docs`.
+Refer to `packages/ui-library/README.md` and Storybook for the list of available components and their props.
 
-> [!NOTE]
-> The updated pages need to be manually reloaded in the browser.
 
-> [!WARNING]
-> You will need to update the `docs/config.json` file (in the project's repo) if you add a new doc page!
+## Project structure (simplified)
+- `src/` — React app source (routes, components, lib)
+  - `routes/` — file‑based routes for TanStack Router (loaders, pending UIs, error boundaries)
+  - `components/` — local UI building blocks composed with `@smtf/ui-library`
+  - `lib/` — helpers/utilities
+
+
+## Working with data
+The app fetches dashboard data from the NestJS backend (`services/dashboard-api`). Typical flow for a route loader:
+
+```tsx
+// Example shape (illustrative)
+import { createFileRoute } from '@tanstack/react-router'
+
+export const Route = createFileRoute('/')({
+  loader: async () => {
+    const res = await fetch('http://localhost:3000/dashboard')
+    if (!res.ok) throw new Error('Failed to load dashboard')
+    return (await res.json()) as unknown
+  },
+  // You can declare pending and error components per route
+})
+```
+
+Route boundaries make it easy to provide:
+- Pending/loading UI while the loader runs
+- Error UI when the loader throws
+
+
+## Scripts
+These commands are available (see `package.json`):
+- `pnpm dev` — start the Vite dev server
+- `pnpm build` — build the app (Vite) and type‑check (`tsc --noEmit`)
+- `pnpm start` — start the Vite preview server
+- `pnpm lint` — run ESLint
+- `pnpm lint:fix` — run ESLint with `--fix`
+- `pnpm format` — format with Prettier
+
+
+## Code quality
+- ESLint: uses the shared `@smtf/eslint-config` for consistent rules across the monorepo (TypeScript, React, Testing)
+- Prettier: enforced via the `format` script to keep diffs clean and styling consistent
+
+
+## Related packages
+- Backend API: `services/dashboard-api` — simple NestJS service with Swagger and validation
+- UI Library: `packages/ui-library` — shared components and styles; includes Storybook
+
+
+## License
+UNLICENSED
