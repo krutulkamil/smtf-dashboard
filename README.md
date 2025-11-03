@@ -1,135 +1,131 @@
-# Turborepo starter
+# smtf-dashboard monorepo
 
-This Turborepo starter is maintained by the Turborepo core team.
+A pnpm workspace powered by Turborepo that hosts apps, services, and shared packages for a small dashboard product. Prefer pnpm (v10) to get correct workspace linking and the best DX.
 
-## Using this example
 
-Run the following command:
+## Why pnpm workspaces?
+This repo uses pnpm workspaces to manage a monorepo of packages, apps, and shared libraries. It's a lightweight and efficient solution for building modular projects.
 
-```sh
-npx create-turbo@latest
+### Why we use pnpm (and not npm/yarn)?
+- Fast, disk-efficient: pnpm uses symlinks and a content-addressable store, meaning shared dependencies are only installed once on disk — huge speed and disk space benefits.
+- Strict & predictable: Dependencies must be explicitly declared; no accidental hoisting or hidden dependencies between packages.
+- Built-in workspaces: No need for extra tools — pnpm natively supports monorepo-style linking, versioning, publishing and running scripts.
+
+### Why workspaces (instead of separate repos)?
+Keeping related packages/services/apps together in a single monorepo offers huge benefits:
+
+- Modular structure, shared tooling
+  Each package or service is isolated (with its own `package.json`), but shares common tools (TypeScript configs, linters, build scripts).
+- Local development workflow
+  Changes in one package (e.g. a shared UI lib or schema) are instantly available to others — no need to publish while developing.
+- Publishable packages
+  Each package in the workspace can be independently built, tested, and published to npm or another registry.
+- Unified CI/CD and deployment
+  You can deploy individual packages without affecting others — or deploy multiple apps from a single pipeline.
+
+
+## Repository layout
+- `apps/`
+  - `dashboard/` — TanStack Start + TanStack Router app that renders a responsive one‑page dashboard and consumes the API and UI library.
+- `services/`
+  - `dashboard-api/` — simple NestJS backend that serves dashboard data; ships Swagger and uses `@smtf/schemas` for validation; prepared for Vercel.
+- `packages/`
+  - `ui-library/` — design system that ships both Web Components (Stencil) and React components + exported styles; includes Storybook.
+  - `schemas/` — shared Zod validation schemas used across FE and BE; built with tsup to ESM+CJS.
+  - `eslint-config/` — shared ESLint flat config presets for TS, React, Vitest, imports, Prettier, Unicorn.
+
+See individual READMEs for details:
+- apps: `apps/dashboard/README.md`
+- service: `services/dashboard-api/README.md`
+- packages: `packages/ui-library/README.md`, `packages/schemas/README.md`, `packages/eslint-config/README.md`
+
+
+## Prerequisites
+- Node.js 18+ (22.x used in the API service)
+- pnpm 10.x (recommended): `corepack enable && corepack prepare pnpm@10 --activate`
+
+
+## Getting started
+From the workspace root:
+
+```bash
+# Install all deps using workspace mode
+pnpm install
+
+# Start both Dashboard (frontend) and API (backend) together
+pnpm dev
+
+# Alternatively, start them in separate terminals
+pnpm -w --filter @smtf/dashboard dev      # Frontend app (Vite)
+pnpm -w --filter @smtf/dashboard-api dev  # Backend (NestJS)
+
+# Or run a single package
+pnpm -w --filter ./packages/ui-library storybook
 ```
 
-## What's inside?
 
-This Turborepo includes the following packages/apps:
+## Common workflows
 
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
+### Build all
+```bash
+# Using turbo via pnpm
 pnpm exec turbo build
 ```
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
+### Develop (watch) all
+```bash
 pnpm exec turbo dev
 ```
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+### Filter tasks to a specific package
+```bash
+# By name
+pnpm exec turbo build --filter=@smtf/ui-library
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
+# Or run the package’s own script through the workspace
+pnpm -w --filter @smtf/ui-library build
 ```
 
-### Remote Caching
+### Publish from a workspace
+Any package can be published individually. Examples:
+```bash
+# From the package directory
+pnpm publish --access public
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
+# From the workspace root using a filter
+pnpm -w --filter @smtf/ui-library publish --access public
 ```
-cd my-turborepo
+See pnpm docs for options (tags, dry runs, etc.):
+https://pnpm.io/cli/publish
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
+### Code quality
+This repo standardizes linting and formatting:
+- ESLint via `@smtf/eslint-config` (Flat Config: TS, React, Vitest, imports, Prettier, Unicorn)
+- Prettier for formatting
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
+Run per package, e.g.:
+```bash
+pnpm -w --filter @smtf/dashboard lint
+pnpm -w --filter @smtf/dashboard format
+```
+
+
+## Notes about the stack
+- The frontend app uses TanStack Start + TanStack Router (file‑based routing, loaders, pending UI, error boundaries) and the shared design system from `@smtf/ui-library`.
+- The backend (`@smtf/dashboard-api`) exposes Swagger at `/api`, enables CORS, and validates data using the shared `@smtf/schemas` Zod package. It includes an `api/index.ts` entry for Vercel compatibility (see service README and Vercel docs).
+- The UI library builds both React components and Web Components (Stencil) in a single `pnpm build` and ships a styles export: `@smtf/ui-library/styles.css`.
+- The schemas package is built with tsup and publishes both ESM (`.mjs`) and CJS (`.js`) plus `.d.ts` types.
+
+
+## Remote caching (optional)
+Turborepo supports local and remote caching to speed up CI and team workflows. If you use Vercel Remote Cache:
+```bash
 pnpm exec turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
 pnpm exec turbo link
 ```
+Learn more: https://turborepo.dev/docs
 
-## Useful Links
 
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+## License
+- Apps and services: UNLICENSED (see service/app READMEs)
+- Packages: see individual package READMEs (most use MIT)
