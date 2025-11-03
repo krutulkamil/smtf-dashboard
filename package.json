@@ -1,0 +1,18 @@
+{
+  "name": "smtf-dashboard",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:dashboard": "pnpm --filter @smtf/dashboard dev",
+    "dev:api": "pnpm --filter @smtf/dashboard-api dev",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "vercel-build": "pnpm --filter=@smtf/dashboard-api build"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.8",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.20.0"
+}

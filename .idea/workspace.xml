@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46378581-ee02-460b-9d5b-3191881ecfa2" name="Changes" comment="feat: update vercel file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/.prettierrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/Dashboard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/constants/apiQueryKeys.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/constants/apiUrl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/dashboard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/http.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-content.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-error.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-loading-wrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/kpi-cards.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/trend-chart.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/layout/mode-toggle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/layout/theme-provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/dropdown-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/skeleton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/hooks/useDashboard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/utils/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/dashboard/src/utils/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/dashboard/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;krutulkamil&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/service-init" />
+                    <option name="lastUsedInstant" value="1762106457" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1762106456" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/services/dashboard-api" />
+            </RecentBranchesForRepo>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/tanstack-start" />
+                    <option name="lastUsedInstant" value="1762184534" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1762107690" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/vercel-deployment" />
+                    <option name="lastUsedInstant" value="1762106979" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/turborepo-init" />
+                    <option name="lastUsedInstant" value="1762105763" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1761842789" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/krutulkamil/smtf-dashboard.git&quot;,
+    &quot;accountId&quot;: &quot;66f648cb-e336-4317-b517-6ed25c53d653&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="34nIC2SRg67Ydh9HHDYnIL5wjMu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/tanstack-start",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/kkrutul/Desktop/personal/smtf-dashboard/apps/start-basic-react-query",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/kkrutul/Desktop/personal/smtf-dashboard/packages/ui-library/node_modules/prettier",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/kkrutul/Desktop/personal/smtf-dashboard/packages/ui-library/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/start-basic-react-query" />
+      <recent name="$PROJECT_DIR$/apps/start-basic-react-query/src/components/dashboard" />
+      <recent name="$PROJECT_DIR$/apps/start-basic-react-query/src/components" />
+      <recent name="$PROJECT_DIR$/packages/ui-library" />
+      <recent name="$PROJECT_DIR$/packages/schemas" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/dashboard-api" />
+      <recent name="$PROJECT_DIR$/apps/dashboard/src/components/dashboard" />
+      <recent name="$PROJECT_DIR$/apps/dashboard/src/components/layout" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/packages/eslint-config" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46378581-ee02-460b-9d5b-3191881ecfa2" name="Changes" comment="" />
+      <created>1761842777487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761842777487</updated>
+      <workItem from="1761842778528" duration="91249000" />
+      <workItem from="1762102998767" duration="2862000" />
+      <workItem from="1762106747288" duration="17865000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: vercel config init">
+      <option name="closed" value="true" />
+      <created>1762107641071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762107641071</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: vercel config init">
+      <option name="closed" value="true" />
+      <created>1762108556182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762108556182</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: update pnpm version">
+      <option name="closed" value="true" />
+      <created>1762112558385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762112558385</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: update main project package.json">
+      <option name="closed" value="true" />
+      <created>1762112705618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762112705618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: update pnpm lock file">
+      <option name="closed" value="true" />
+      <created>1762112767829</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762112767829</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: update pnpm lock file">
+      <option name="closed" value="true" />
+      <created>1762112897232</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762112897232</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: update pnpm lock file">
+      <option name="closed" value="true" />
+      <created>1762113623225</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762113623225</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: update vercel file">
+      <option name="closed" value="true" />
+      <created>1762113933685</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762113933685</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: update vercel file">
+      <option name="closed" value="true" />
+      <created>1762114023620</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762114023620</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: update vercel file">
+      <option name="closed" value="true" />
+      <created>1762114131984</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762114131984</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="feat: turborepo init" />
+    <MESSAGE value="feat: vercel config init" />
+    <MESSAGE value="feat: update pnpm version" />
+    <MESSAGE value="feat: update main project package.json" />
+    <MESSAGE value="feat: update pnpm lock file" />
+    <MESSAGE value="feat: update vercel file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update vercel file" />
+  </component>
+</project>

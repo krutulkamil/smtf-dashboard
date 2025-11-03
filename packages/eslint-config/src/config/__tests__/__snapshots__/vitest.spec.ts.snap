@@ -1,0 +1,2047 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Vitest ESLint Config > should match the snapshot 1`] = `
+[
+  {
+    "files": [
+      "**/*.spec.*",
+      "**/*.test.*",
+    ],
+    "languageOptions": {
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true,
+        },
+        "ecmaVersion": "latest",
+        "projectService": true,
+        "sourceType": "module",
+      },
+    },
+    "name": "@smtf-eslint/vitest",
+    "plugins": {
+      "vitest": {
+        "configs": {
+          "all": {
+            "name": "vitest/all",
+            "plugins": {
+              "vitest": [Circular],
+            },
+            "rules": {
+              "vitest/consistent-test-filename": "warn",
+              "vitest/consistent-test-it": "warn",
+              "vitest/consistent-vitest-vi": "warn",
+              "vitest/expect-expect": "warn",
+              "vitest/hoisted-apis-on-top": "warn",
+              "vitest/max-expects": "warn",
+              "vitest/max-nested-describe": "warn",
+              "vitest/no-alias-methods": "warn",
+              "vitest/no-commented-out-tests": "warn",
+              "vitest/no-conditional-expect": "warn",
+              "vitest/no-conditional-in-test": "warn",
+              "vitest/no-conditional-tests": "warn",
+              "vitest/no-disabled-tests": "warn",
+              "vitest/no-duplicate-hooks": "warn",
+              "vitest/no-focused-tests": "warn",
+              "vitest/no-hooks": "warn",
+              "vitest/no-identical-title": "warn",
+              "vitest/no-import-node-test": "warn",
+              "vitest/no-importing-vitest-globals": "off",
+              "vitest/no-interpolation-in-snapshots": "warn",
+              "vitest/no-large-snapshots": "warn",
+              "vitest/no-mocks-import": "warn",
+              "vitest/no-restricted-matchers": "warn",
+              "vitest/no-restricted-vi-methods": "warn",
+              "vitest/no-standalone-expect": "warn",
+              "vitest/no-test-prefixes": "warn",
+              "vitest/no-test-return-statement": "warn",
+              "vitest/padding-around-after-all-blocks": "warn",
+              "vitest/padding-around-after-each-blocks": "warn",
+              "vitest/padding-around-all": "warn",
+              "vitest/padding-around-before-all-blocks": "warn",
+              "vitest/padding-around-before-each-blocks": "warn",
+              "vitest/padding-around-describe-blocks": "warn",
+              "vitest/padding-around-expect-groups": "warn",
+              "vitest/padding-around-test-blocks": "warn",
+              "vitest/prefer-called-exactly-once-with": "warn",
+              "vitest/prefer-called-once": "off",
+              "vitest/prefer-called-times": "warn",
+              "vitest/prefer-called-with": "warn",
+              "vitest/prefer-comparison-matcher": "warn",
+              "vitest/prefer-describe-function-title": "warn",
+              "vitest/prefer-each": "warn",
+              "vitest/prefer-equality-matcher": "warn",
+              "vitest/prefer-expect-assertions": "warn",
+              "vitest/prefer-expect-resolves": "warn",
+              "vitest/prefer-expect-type-of": "warn",
+              "vitest/prefer-hooks-in-order": "warn",
+              "vitest/prefer-hooks-on-top": "warn",
+              "vitest/prefer-import-in-mock": "warn",
+              "vitest/prefer-importing-vitest-globals": "warn",
+              "vitest/prefer-lowercase-title": "warn",
+              "vitest/prefer-mock-promise-shorthand": "warn",
+              "vitest/prefer-snapshot-hint": "warn",
+              "vitest/prefer-spy-on": "warn",
+              "vitest/prefer-strict-boolean-matchers": "warn",
+              "vitest/prefer-strict-equal": "warn",
+              "vitest/prefer-to-be": "warn",
+              "vitest/prefer-to-be-falsy": "off",
+              "vitest/prefer-to-be-object": "warn",
+              "vitest/prefer-to-be-truthy": "off",
+              "vitest/prefer-to-contain": "warn",
+              "vitest/prefer-to-have-length": "warn",
+              "vitest/prefer-todo": "warn",
+              "vitest/prefer-vi-mocked": "warn",
+              "vitest/require-hook": "warn",
+              "vitest/require-local-test-context-for-concurrent-snapshots": "warn",
+              "vitest/require-mock-type-parameters": "warn",
+              "vitest/require-to-throw-message": "warn",
+              "vitest/require-top-level-describe": "warn",
+              "vitest/valid-describe-callback": "warn",
+              "vitest/valid-expect": "warn",
+              "vitest/valid-expect-in-promise": "warn",
+              "vitest/valid-title": "warn",
+            },
+          },
+          "env": {
+            "languageOptions": {
+              "globals": {
+                "afterAll": "writable",
+                "afterEach": "writable",
+                "assert": "writable",
+                "assertType": "writable",
+                "beforeAll": "writable",
+                "beforeEach": "writable",
+                "chai": "writable",
+                "describe": "writable",
+                "expect": "writable",
+                "expectTypeOf": "writable",
+                "it": "writable",
+                "onTestFailed": "writable",
+                "onTestFinished": "writable",
+                "suite": "writable",
+                "test": "writable",
+                "vi": "writable",
+                "vitest": "writable",
+              },
+            },
+            "name": "vitest/env",
+          },
+          "legacy-all": {
+            "plugins": [
+              "@vitest",
+            ],
+            "rules": {
+              "@vitest/consistent-test-filename": "warn",
+              "@vitest/consistent-test-it": "warn",
+              "@vitest/consistent-vitest-vi": "warn",
+              "@vitest/expect-expect": "warn",
+              "@vitest/hoisted-apis-on-top": "warn",
+              "@vitest/max-expects": "warn",
+              "@vitest/max-nested-describe": "warn",
+              "@vitest/no-alias-methods": "warn",
+              "@vitest/no-commented-out-tests": "warn",
+              "@vitest/no-conditional-expect": "warn",
+              "@vitest/no-conditional-in-test": "warn",
+              "@vitest/no-conditional-tests": "warn",
+              "@vitest/no-disabled-tests": "warn",
+              "@vitest/no-duplicate-hooks": "warn",
+              "@vitest/no-focused-tests": "warn",
+              "@vitest/no-hooks": "warn",
+              "@vitest/no-identical-title": "warn",
+              "@vitest/no-import-node-test": "warn",
+              "@vitest/no-importing-vitest-globals": "off",
+              "@vitest/no-interpolation-in-snapshots": "warn",
+              "@vitest/no-large-snapshots": "warn",
+              "@vitest/no-mocks-import": "warn",
+              "@vitest/no-restricted-matchers": "warn",
+              "@vitest/no-restricted-vi-methods": "warn",
+              "@vitest/no-standalone-expect": "warn",
+              "@vitest/no-test-prefixes": "warn",
+              "@vitest/no-test-return-statement": "warn",
+              "@vitest/padding-around-after-all-blocks": "warn",
+              "@vitest/padding-around-after-each-blocks": "warn",
+              "@vitest/padding-around-all": "warn",
+              "@vitest/padding-around-before-all-blocks": "warn",
+              "@vitest/padding-around-before-each-blocks": "warn",
+              "@vitest/padding-around-describe-blocks": "warn",
+              "@vitest/padding-around-expect-groups": "warn",
+              "@vitest/padding-around-test-blocks": "warn",
+              "@vitest/prefer-called-exactly-once-with": "warn",
+              "@vitest/prefer-called-once": "off",
+              "@vitest/prefer-called-times": "warn",
+              "@vitest/prefer-called-with": "warn",
+              "@vitest/prefer-comparison-matcher": "warn",
+              "@vitest/prefer-describe-function-title": "warn",
+              "@vitest/prefer-each": "warn",
+              "@vitest/prefer-equality-matcher": "warn",
+              "@vitest/prefer-expect-assertions": "warn",
+              "@vitest/prefer-expect-resolves": "warn",
+              "@vitest/prefer-expect-type-of": "warn",
+              "@vitest/prefer-hooks-in-order": "warn",
+              "@vitest/prefer-hooks-on-top": "warn",
+              "@vitest/prefer-import-in-mock": "warn",
+              "@vitest/prefer-importing-vitest-globals": "warn",
+              "@vitest/prefer-lowercase-title": "warn",
+              "@vitest/prefer-mock-promise-shorthand": "warn",
+              "@vitest/prefer-snapshot-hint": "warn",
+              "@vitest/prefer-spy-on": "warn",
+              "@vitest/prefer-strict-boolean-matchers": "warn",
+              "@vitest/prefer-strict-equal": "warn",
+              "@vitest/prefer-to-be": "warn",
+              "@vitest/prefer-to-be-falsy": "off",
+              "@vitest/prefer-to-be-object": "warn",
+              "@vitest/prefer-to-be-truthy": "off",
+              "@vitest/prefer-to-contain": "warn",
+              "@vitest/prefer-to-have-length": "warn",
+              "@vitest/prefer-todo": "warn",
+              "@vitest/prefer-vi-mocked": "warn",
+              "@vitest/require-hook": "warn",
+              "@vitest/require-local-test-context-for-concurrent-snapshots": "warn",
+              "@vitest/require-mock-type-parameters": "warn",
+              "@vitest/require-to-throw-message": "warn",
+              "@vitest/require-top-level-describe": "warn",
+              "@vitest/valid-describe-callback": "warn",
+              "@vitest/valid-expect": "warn",
+              "@vitest/valid-expect-in-promise": "warn",
+              "@vitest/valid-title": "warn",
+            },
+          },
+          "legacy-recommended": {
+            "plugins": [
+              "@vitest",
+            ],
+            "rules": {
+              "@vitest/expect-expect": "error",
+              "@vitest/no-commented-out-tests": "error",
+              "@vitest/no-identical-title": "error",
+              "@vitest/no-import-node-test": "error",
+              "@vitest/prefer-called-exactly-once-with": "error",
+              "@vitest/require-local-test-context-for-concurrent-snapshots": "error",
+              "@vitest/valid-describe-callback": "error",
+              "@vitest/valid-expect": "error",
+              "@vitest/valid-title": "error",
+            },
+          },
+          "recommended": {
+            "name": "vitest/recommended",
+            "plugins": {
+              "vitest": [Circular],
+            },
+            "rules": {
+              "vitest/expect-expect": "error",
+              "vitest/no-commented-out-tests": "error",
+              "vitest/no-identical-title": "error",
+              "vitest/no-import-node-test": "error",
+              "vitest/prefer-called-exactly-once-with": "error",
+              "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+              "vitest/valid-describe-callback": "error",
+              "vitest/valid-expect": "error",
+              "vitest/valid-title": "error",
+            },
+          },
+        },
+        "environments": {
+          "env": {
+            "globals": {
+              "afterAll": true,
+              "afterEach": true,
+              "assert": true,
+              "assertType": true,
+              "beforeAll": true,
+              "beforeEach": true,
+              "chai": true,
+              "describe": true,
+              "expect": true,
+              "expectTypeOf": true,
+              "it": true,
+              "onTestFailed": true,
+              "onTestFinished": true,
+              "suite": true,
+              "test": true,
+              "vi": true,
+              "vitest": true,
+            },
+          },
+        },
+        "meta": {
+          "name": "vitest",
+          "version": "1.4.0",
+        },
+        "rules": {
+          "consistent-test-filename": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "allTestPattern": ".*\\.(test|spec)\\.[tj]sx?$",
+                "pattern": ".*\\.test\\.[tj]sx?$",
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "require test file pattern",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-filename.md",
+              },
+              "messages": {
+                "consistentTestFilename": "Use test file name pattern {{ pattern }}",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "allTestPattern": {
+                      "default": ".*\\.(test|spec)\\.[tj]sx?$",
+                      "format": "regex",
+                      "type": "string",
+                    },
+                    "pattern": {
+                      "default": ".*\\.test\\.[tj]sx?$",
+                      "format": "regex",
+                      "type": "string",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "problem",
+            },
+          },
+          "consistent-test-it": {
+            "create": [Function],
+            "defaultOptions": [
+              {},
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce using test or it but not both",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-it.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "consistentMethod": "Prefer using {{ testFnKeyWork }} instead of {{ oppositeTestKeyword }}",
+                "consistentMethodWithinDescribe": "Prefer using {{ testKeywordWithinDescribe }} instead of {{ oppositeTestKeyword }} within describe",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "fn": {
+                      "enum": [
+                        "test",
+                        "it",
+                      ],
+                      "type": "string",
+                    },
+                    "withinDescribe": {
+                      "enum": [
+                        "test",
+                        "it",
+                      ],
+                      "type": "string",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "consistent-vitest-vi": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "fn": "vi",
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce using vitest or vi but not both",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-vitest-vi.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "consistentUtil": "Prefer using {{ utilKeyword }} instead of {{ oppositeUtilKeyword }}",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "fn": {
+                      "default": "vi",
+                      "enum": [
+                        "vi",
+                        "vitest",
+                      ],
+                      "type": "string",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "expect-expect": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "additionalTestBlockFunctions": [],
+                "assertFunctionNames": [
+                  "expect",
+                  "assert",
+                ],
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce having expectation in test body",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/expect-expect.md",
+              },
+              "messages": {
+                "noAssertions": "Test has no assertions",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "additionalTestBlockFunctions": {
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                    "assertFunctionNames": {
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "hoisted-apis-on-top": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce hoisted APIs to be on top of the file",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/hoisted-apis-on-top.md",
+              },
+              "hasSuggestions": true,
+              "messages": {
+                "hoistedApisOnTop": "Hoisted API is used in a runtime location in this file, but it is actually executed before this file is loaded.",
+                "suggestMoveHoistedApiToTop": "Move this hoisted API to the top of the file to better reflect its behavior.",
+                "suggestReplaceMockWithDoMock": "Replace 'vi.mock()' with 'vi.doMock()', which is not hoisted.",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "max-expects": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "max": 5,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce a maximum number of expect per test",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-expects.md",
+              },
+              "messages": {
+                "maxExpect": "Too many assertion calls ({{ count }}) - maximum allowed is {{ max }}",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "max": {
+                      "type": "number",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "max-nested-describe": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "max": 5,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "require describe block to be less than set max value or default value",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-nested-describe.md",
+              },
+              "messages": {
+                "maxNestedDescribe": "Nested describe block should be less than set max value",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "max": {
+                      "type": "number",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "problem",
+            },
+          },
+          "no-alias-methods": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow alias methods",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-alias-methods.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "noAliasMethods": "Replace {{ alias }}() with its canonical name {{ canonical }}()",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-commented-out-tests": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow commented out tests",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-commented-out-tests.md",
+              },
+              "messages": {
+                "noCommentedOutTests": "Remove commented out tests - you may want to use \`skip\` or \`only\` instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-conditional-expect": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow conditional expects",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-expect.md",
+              },
+              "messages": {
+                "noConditionalExpect": "Avoid calling \`expect\` inside conditional statements",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "no-conditional-in-test": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow conditional tests",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-in-test.md",
+              },
+              "messages": {
+                "noConditionalInTest": "Remove conditional tests",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "no-conditional-tests": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow conditional tests",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-tests.md",
+              },
+              "messages": {
+                "noConditionalTests": "Avoid using if conditions in a test",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "no-disabled-tests": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow disabled tests",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-disabled-tests.md",
+              },
+              "messages": {
+                "disabledSuite": "Disabled test suite - if you want to skip a test suite temporarily, use .todo() instead",
+                "disabledTest": "Disabled test - if you want to skip a test temporarily, use .todo() instead",
+                "missingFunction": "Test is missing function argument",
+                "pending": "Call to pending()",
+                "pendingSuite": "Call to pending() within test suite",
+                "pendingTest": "Call to pending() within test",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-done-callback": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": true,
+              "docs": {
+                "description": "disallow using a callback in asynchronous tests and hooks",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-done-callback.md",
+              },
+              "hasSuggestions": true,
+              "messages": {
+                "noDoneCallback": "Return a promise instead of relying on callback parameter",
+                "suggestWrappingInPromise": "Wrap in \`new Promise({{ callback }} => ...\`",
+                "useAwaitInsteadOfCallback": "Use \`await\` instead of callback in async function",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-duplicate-hooks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow duplicate hooks and teardown hooks",
+                "recommended": false,
+                "requiresTypeChecking": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-duplicate-hooks.md",
+              },
+              "messages": {
+                "noDuplicateHooks": "Duplicate {{ hook }} in describe block",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-focused-tests": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "fixable": true,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "disallow focused tests",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-focused-tests.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "noFocusedTests": "Focused tests are not allowed",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "fixable": {
+                      "default": true,
+                      "type": "boolean",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "problem",
+            },
+          },
+          "no-hooks": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "allow": [],
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "disallow setup and teardown hooks",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-hooks.md",
+              },
+              "messages": {
+                "unexpectedHook": "Unexpected '{{ hookName }}' hook",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "allow": {
+                      "contains": [
+                        "beforeAll",
+                        "beforeEach",
+                        "afterAll",
+                        "afterEach",
+                      ],
+                      "type": "array",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "no-identical-title": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow identical titles",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-identical-title.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "multipleDescribeTitle": "Describe is used multiple times in the same describe(suite) block",
+                "multipleTestTitle": "Test is used multiple times in the same describe(suite) block",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "no-import-node-test": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow importing \`node:test\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-import-node-test.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "noImportNodeTest": "Import from \`vitest\` instead of \`node:test\`",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-importing-vitest-globals": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow importing Vitest globals",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-importing-vitest-globals.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "noImportingVitestGlobals": "Do not import '{{name}}' from 'vitest'. Use globals configuration instead.",
+                "noRequiringVitestGlobals": "Do not require '{{name}}' from 'vitest'. Use globals configuration instead.",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-interpolation-in-snapshots": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow string interpolation in snapshots",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "noInterpolationInSnapshots": "Do not use string interpolation in snapshots",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "no-large-snapshots": {
+            "create": [Function],
+            "defaultOptions": [
+              {},
+            ],
+            "meta": {
+              "docs": {
+                "description": "disallow large snapshots",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-large-snapshots.md",
+              },
+              "messages": {
+                "noSnapShot": "\`{{ lineCount }}\`s should begin with lowercase",
+                "tooLongSnapShot": "Expected vitest snapshot to be smaller than {{ lineLimit }} lines but was {{ lineCount }} lines long",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "allowedSnapshots": {
+                      "additionalProperties": {
+                        "type": "array",
+                      },
+                      "type": "object",
+                    },
+                    "inlineMaxSize": {
+                      "type": "number",
+                    },
+                    "maxSize": {
+                      "type": "number",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "no-mocks-import": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow importing from __mocks__ directory",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-mocks-import.md",
+              },
+              "messages": {
+                "noMocksImport": "Mocks should not be manually imported from a __mocks__ directory. Instead use \`vi.mock\` and import from the original module path",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "no-restricted-matchers": {
+            "create": [Function],
+            "defaultOptions": [
+              {},
+            ],
+            "meta": {
+              "docs": {
+                "description": "disallow the use of certain matchers",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-restricted-matchers.md",
+              },
+              "messages": {
+                "restrictedChain": "use of {{ restriction }} is disallowed",
+                "restrictedChainWithMessage": "{{ message }}",
+              },
+              "schema": [
+                {
+                  "additionalProperties": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "no-restricted-vi-methods": {
+            "create": [Function],
+            "defaultOptions": [
+              {},
+            ],
+            "meta": {
+              "docs": {
+                "description": "disallow specific \`vi.\` methods",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-restricted-vi-methods.md",
+              },
+              "messages": {
+                "restrictedViMethod": "Use of \`{{ restriction }}\` is disallowed",
+                "restrictedViMethodWithMessage": "{{ message }}",
+              },
+              "schema": [
+                {
+                  "additionalProperties": {
+                    "type": [
+                      "string",
+                      "null",
+                    ],
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "no-standalone-expect": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "additionalTestBlockFunctions": [],
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "disallow using \`expect\` outside of \`it\` or \`test\` blocks",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-standalone-expect.md",
+              },
+              "messages": {
+                "noStandaloneExpect": "Expect must be called inside a test block",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "additionalTestBlockFunctions": {
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "no-test-prefixes": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow using the \`f\` and \`x\` prefixes in favour of \`.only\` and \`.skip\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-prefixes.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "usePreferredName": "Use "{{ preferredNodeName }}" instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "no-test-return-statement": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow return statements in tests",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md",
+              },
+              "messages": {
+                "noTestReturnStatement": "Return statements are not allowed in tests",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "padding-around-after-all-blocks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`afterAll\` blocks",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-after-all-blocks.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-after-each-blocks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`afterEach\` blocks",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-after-each-blocks.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-all": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around vitest functions",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-all.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-before-all-blocks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`beforeAll\` blocks",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-before-all-blocks.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-before-each-blocks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`beforeEach\` blocks",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-before-each-blocks.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-describe-blocks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`describe\` blocks",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-describe-blocks.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-expect-groups": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`expect\` groups",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-expect-groups.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "padding-around-test-blocks": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "deprecated": false,
+              "docs": {
+                "description": "Enforce padding around \`test\` blocks",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-test-blocks.md",
+              },
+              "fixable": "whitespace",
+              "messages": {
+                "missingPadding": "expect blank line before this statement",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-called-exactly-once-with": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "Prefer \`toHaveBeenCalledExactlyOnceWith\` over \`toHaveBeenCalledOnce\` and \`toHaveBeenCalledWith\`",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-exactly-once-with.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferCalledExactlyOnceWith": "Using \`toHaveBeenCalledOnce\` and \`toHaveBeenCalledWith\` on the same target; prefer \`toHaveBeenCalledExactlyOnceWith\` instead.",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-called-once": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`toBeCalledOnce()\` or \`toHaveBeenCalledOnce()\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-once.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferCalledOnce": "Prefer {{ replacedMatcherName }}()",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-called-times": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`toBeCalledTimes(1)\` or \`toHaveBeenCalledTimes(1)\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-times.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferCalledTimes": "Prefer {{ replacedMatcherName }}(1)",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-called-with": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`toBeCalledWith()\` or \`toHaveBeenCalledWith()\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-with.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferCalledWith": "Prefer {{ matcherName }}With(/* expected args */)",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-comparison-matcher": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using the built-in comparison matchers",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-comparison-matcher.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "useToBeComparison": "Prefer using \`{{ preferredMatcher }}\` instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-describe-function-title": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using a function as a describe title over an equivalent string",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-describe-function-title.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferFunction": "Enforce using a function over an equivalent string",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "prefer-each": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`each\` rather than manual loops",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-each.md",
+              },
+              "messages": {
+                "preferEach": "Prefer using \`{{ fn }}.each\` rather than a manual loop",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-equality-matcher": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using the built-in quality matchers",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-equality-matcher.md",
+              },
+              "hasSuggestions": true,
+              "messages": {
+                "suggestEqualityMatcher": "Use \`{{ equalityMatcher }}\`",
+                "useEqualityMatcher": "Prefer using one of the equality matchers instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-expect-assertions": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "onlyFunctionsWithAsyncKeyword": false,
+                "onlyFunctionsWithExpectInCallback": false,
+                "onlyFunctionsWithExpectInLoop": false,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce using expect assertions instead of callbacks",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-assertions.md",
+              },
+              "hasSuggestions": true,
+              "messages": {
+                "assertionsRequiresNumberArgument": "This argument should be a number",
+                "assertionsRequiresOneArgument": "\`expect.assertions\` excepts a single argument of type number",
+                "hasAssertionsTakesNoArguments": "\`expect.hasAssertions\` expects no arguments",
+                "haveExpectAssertions": "Every test should have either \`expect.assertions(<number of assertions>)\` or \`expect.hasAssertions()\` as its first expression",
+                "suggestAddingAssertions": "Add \`expect.assertions(<number of assertions>)\`",
+                "suggestAddingHasAssertions": "Add \`expect.hasAssertions()\`",
+                "suggestRemovingExtraArguments": "Remove extra arguments",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "onlyFunctionsWithAsyncKeyword": {
+                      "type": "boolean",
+                    },
+                    "onlyFunctionsWithExpectInCallback": {
+                      "type": "boolean",
+                    },
+                    "onlyFunctionsWithExpectInLoop": {
+                      "type": "boolean",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "prefer-expect-resolves": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`expect().resolves\` over \`expect(await ...)\` syntax",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-resolves.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "expectResolves": "Use \`expect().resolves\` instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-expect-type-of": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`expectTypeOf\` instead of \`expect(typeof ...)\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-type-of.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferExpectTypeOf": "Use \`expectTypeOf({{ value }}).{{ matcher }}()\` instead of \`expect(typeof {{ value }}).toBe("{{ type }}")\`",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-hooks-in-order": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce having hooks in consistent order",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-in-order.md",
+              },
+              "messages": {
+                "reorderHooks": "\`{{ currentHook }}\` hooks should be before any \`{{ previousHook }}\` hooks",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-hooks-on-top": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce having hooks before any test cases",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-on-top.md",
+              },
+              "messages": {
+                "noHookOnTop": "Hooks should come before test cases",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-import-in-mock": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "prefer dynamic import in mock",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-import-in-mock.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferImport": "Replace '{{path}}' with import('{{path}}')",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-importing-vitest-globals": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce importing Vitest globals",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-importing-vitest-globals.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferImportingVitestGlobals": "Import '{{name}}' from 'vitest'",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-lowercase-title": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "allowedPrefixes": [],
+                "ignore": [],
+                "ignoreTopLevelDescribe": false,
+                "lowercaseFirstCharacterOnly": true,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce lowercase titles",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-lowercase-title.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "fullyLowerCaseTitle": "\`{{ method }}\`s should be lowercase",
+                "lowerCaseTitle": "\`{{ method }}\`s should begin with lowercase",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "allowedPrefixes": {
+                      "additionalItems": false,
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                    "ignore": {
+                      "items": {
+                        "enum": [
+                          "describe",
+                          "test",
+                          "it",
+                        ],
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                    "ignoreTopLevelDescribe": {
+                      "default": false,
+                      "type": "boolean",
+                    },
+                    "lowercaseFirstCharacterOnly": {
+                      "default": true,
+                      "type": "boolean",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "problem",
+            },
+          },
+          "prefer-mock-promise-shorthand": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce mock resolved/rejected shorthands for promises",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-promise-shorthand.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "useMockShorthand": "Prefer {{ replacement }}",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-snapshot-hint": {
+            "create": [Function],
+            "defaultOptions": [
+              "multi",
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce including a hint with external snapshots",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-snapshot-hint.md",
+              },
+              "messages": {
+                "missingHint": "You should provide a hint for this snapshot",
+              },
+              "schema": [
+                {
+                  "enum": [
+                    "always",
+                    "multi",
+                  ],
+                  "type": "string",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "prefer-spy-on": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`vi.spyOn\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-spy-on.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "useViSpayOn": "Use \`vi.spyOn\` instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-strict-boolean-matchers": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`toBe(true)\` and \`toBe(false)\` over matchers that coerce types to boolean",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-boolean-matchers.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferToBeFalse": "Prefer using \`toBe(false)\` to test value is \`false\`",
+                "preferToBeTrue": "Prefer using \`toBe(true)\` to test value is \`true\`",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-strict-equal": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce strict equal over equal",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-equal.md",
+              },
+              "hasSuggestions": true,
+              "messages": {
+                "suggestReplaceWithStrictEqual": "Replace with \`toStrictEqual()\`",
+                "useToStrictEqual": "Use \`toStrictEqual()\` instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-to-be": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using toBe()",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "useToBe": "Use \`toBe\` instead",
+                "useToBeDefined": "Use \`toBeDefined()\` instead",
+                "useToBeNaN": "Use \`toBeNaN()\` instead",
+                "useToBeNull": "Use \`toBeNull()\` instead",
+                "useToBeUndefined": "Use \`toBeUndefined()\` instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-to-be-falsy": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using toBeFalsy()",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-falsy.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferToBeFalsy": "Prefer using toBeFalsy()",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-to-be-object": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using toBeObject()",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-object.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferToBeObject": "Prefer toBeObject() to test if a value is an object",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-to-be-truthy": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`toBeTruthy\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferToBeTruthy": "Prefer using \`toBeTruthy\` to test value is \`true\`",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-to-contain": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using toContain()",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-contain.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "useToContain": "Use toContain() instead",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-to-have-length": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using toHaveLength()",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-length.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "preferToHaveLength": "Prefer toHaveLength()",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "prefer-todo": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce using \`test.todo\`",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "emptyTest": "Prefer todo test case over empty test case",
+                "unimplementedTest": "Prefer todo test case over unimplemented test case",
+              },
+              "schema": [],
+              "type": "layout",
+            },
+          },
+          "prefer-vi-mocked": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "require \`vi.mocked()\` over \`fn as Mock\`",
+                "recommended": false,
+                "requiresTypeChecking": true,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-vi-mocked.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "useViMocked": "Prefer \`vi.mocked()\`",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "require-hook": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "allowedFunctionCalls": [],
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "require setup and teardown to be within a hook",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-hook.md",
+              },
+              "messages": {
+                "useHook": "This should be done within a hook",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "allowedFunctionCalls": {
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "require-local-test-context-for-concurrent-snapshots": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "require local Test Context for concurrent snapshot tests",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-local-test-context-for-concurrent-snapshots.md",
+              },
+              "messages": {
+                "requireLocalTestContext": "Use local Test Context instead",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "require-mock-type-parameters": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "checkImportFunctions": false,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce using type parameters with vitest mock functions",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-mock-type-parameters.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "noTypeParameter": "Missing type parameters",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "checkImportFunctions": {
+                      "type": "boolean",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "require-to-throw-message": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "require toThrow() to be called with an error message",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-to-throw-message.md",
+              },
+              "messages": {
+                "addErrorMessage": "Add an error message to {{ matcherName }}()",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "require-top-level-describe": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "maxNumberOfTopLevelDescribes": Infinity,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce that all tests are in a top-level describe",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-top-level-describe.md",
+              },
+              "messages": {
+                "tooManyDescribes": "There should not be more than {{ max }} describe{{ s }} at the top level",
+                "unexpectedHook": "All hooks must be wrapped in a describe block",
+                "unexpectedTestCase": "All test cases must be wrapped in a describe block",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "maxNumberOfTopLevelDescribes": {
+                      "default": Infinity,
+                      "minimum": 1,
+                      "type": "number",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "valid-describe-callback": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "enforce valid describe callback",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-describe-callback.md",
+              },
+              "messages": {
+                "nameAndCallback": "Describe requires a name and callback arguments",
+                "secondArgumentMustBeFunction": "Second argument must be a function",
+                "unexpectedDescribeArgument": "Unexpected argument in describe callback",
+                "unexpectedReturnInDescribe": "Unexpected return statement in describe callback",
+              },
+              "schema": [],
+              "type": "problem",
+            },
+          },
+          "valid-expect": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "alwaysAwait": false,
+                "asyncMatchers": [
+                  "toReject",
+                  "toResolve",
+                ],
+                "maxArgs": 1,
+                "minArgs": 1,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce valid \`expect()\` usage",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-expect.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "asyncMustBeAwaited": "Async assertions must be awaited{{ orReturned }}",
+                "matcherNotCalled": "Matchers must be called to assert",
+                "matcherNotFound": "Expect must have a corresponding matcher call",
+                "modifierUnknown": "Expect has an unknown modifier",
+                "notEnoughArgs": "Expect requires at least {{ amount }} argument{{ s }}",
+                "promisesWithAsyncAssertionsMustBeAwaited": "Promises which return async assertions must be awaited{{ orReturned }}",
+                "tooManyArgs": "Expect takes at most {{ amount}} argument{{ s }}",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "alwaysAwait": {
+                      "default": false,
+                      "type": "boolean",
+                    },
+                    "asyncMatchers": {
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                    "maxArgs": {
+                      "minimum": 1,
+                      "type": "number",
+                    },
+                    "minArgs": {
+                      "minimum": 1,
+                      "type": "number",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "valid-expect-in-promise": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "alwaysAwait": false,
+                "asyncMatchers": [
+                  "toRejectWith",
+                  "toResolveWith",
+                ],
+                "maxArgs": 1,
+                "minArgs": 1,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "require promises that have expectations in their chain to be valid",
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-expect-in-promise.md",
+              },
+              "messages": {
+                "expectInFloatingPromise": "This promise should either be returned or awaited to ensure the expects in its chain are called",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+          "valid-title": {
+            "create": [Function],
+            "defaultOptions": [
+              {
+                "allowArguments": false,
+                "disallowedWords": [],
+                "ignoreTypeOfDescribeName": false,
+              },
+            ],
+            "meta": {
+              "docs": {
+                "description": "enforce valid titles",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md",
+              },
+              "fixable": "code",
+              "messages": {
+                "accidentalSpace": "should not have leading or trailing spaces",
+                "disallowedWord": ""{{ word }}" is not allowed in test title",
+                "duplicatePrefix": "should not have duplicate prefix",
+                "emptyTitle": "{{ functionName }} should not have an empty title",
+                "mustMatch": "{{ functionName }} should match {{ pattern }}",
+                "mustMatchCustom": "{{ message }}",
+                "mustNotMatch": "{{ functionName }} should not match {{ pattern }}",
+                "mustNotMatchCustom": "{{ message }}",
+                "titleMustBeString": "Test title must be a string, a function or class name",
+              },
+              "schema": [
+                {
+                  "additionalProperties": false,
+                  "patternProperties": {
+                    "^must(?:Not)?Match$": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                        },
+                        {
+                          "additionalItems": false,
+                          "items": {
+                            "type": "string",
+                          },
+                          "maxItems": 2,
+                          "minItems": 1,
+                          "type": "array",
+                        },
+                        {
+                          "additionalProperties": {
+                            "oneOf": [
+                              {
+                                "type": "string",
+                              },
+                              {
+                                "additionalItems": false,
+                                "items": {
+                                  "type": "string",
+                                },
+                                "maxItems": 2,
+                                "minItems": 1,
+                                "type": "array",
+                              },
+                            ],
+                          },
+                          "propertyNames": {
+                            "enum": [
+                              "describe",
+                              "test",
+                              "it",
+                            ],
+                            "type": "string",
+                          },
+                          "type": "object",
+                        },
+                      ],
+                    },
+                  },
+                  "properties": {
+                    "allowArguments": {
+                      "default": false,
+                      "type": "boolean",
+                    },
+                    "disallowedWords": {
+                      "items": {
+                        "type": "string",
+                      },
+                      "type": "array",
+                    },
+                    "ignoreTypeOfDescribeName": {
+                      "default": false,
+                      "type": "boolean",
+                    },
+                  },
+                  "type": "object",
+                },
+              ],
+              "type": "suggestion",
+            },
+          },
+          "warn-todo": {
+            "create": [Function],
+            "defaultOptions": [],
+            "meta": {
+              "docs": {
+                "description": "disallow \`.todo\` usage",
+                "recommended": false,
+                "url": "https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/warn-todo.md",
+              },
+              "messages": {
+                "warnTodo": "The use of \`.todo\` is not recommended.",
+              },
+              "schema": [],
+              "type": "suggestion",
+            },
+          },
+        },
+      },
+    },
+    "rules": {
+      "vitest/expect-expect": [
+        "error",
+        {
+          "assertFunctionNames": [
+            "expect*",
+          ],
+        },
+      ],
+      "vitest/no-commented-out-tests": "error",
+      "vitest/no-identical-title": "error",
+      "vitest/no-import-node-test": "error",
+      "vitest/prefer-called-exactly-once-with": "error",
+      "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+      "vitest/valid-describe-callback": "error",
+      "vitest/valid-expect": "error",
+      "vitest/valid-title": "error",
+    },
+  },
+]
+`;
