@@ -6,44 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46378581-ee02-460b-9d5b-3191881ecfa2" name="Changes" comment="feat: update vercel file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/.prettierrc.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/components.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/Dashboard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/constants/apiQueryKeys.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/constants/apiUrl.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/dashboard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/api/http.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-content.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-error.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/dashboard-loading-wrapper.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/kpi-cards.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/dashboard/trend-chart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/layout/mode-toggle.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/layout/theme-provider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/dropdown-menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/components/ui/skeleton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/hooks/useDashboard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/lib/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/main.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/src/utils/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/dashboard/src/utils/dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/dashboard/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +57,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature/turbo-config" />
+                    <option name="lastUsedInstant" value="1762456498" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="feature/tanstack-start" />
                     <option name="lastUsedInstant" value="1762184534" />
                   </RecentBranch>
@@ -107,10 +75,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature/turborepo-init" />
                     <option name="lastUsedInstant" value="1762105763" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="develop" />
-                    <option name="lastUsedInstant" value="1761842789" />
                   </RecentBranch>
                 </list>
               </option>
@@ -144,7 +108,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/tanstack-start",
+    "git-widget-placeholder": "feature/turbo-config",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/kkrutul/Desktop/personal/smtf-dashboard/apps/start-basic-react-query",
     "node.js.detected.package.eslint": "true",
@@ -152,10 +116,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/kkrutul/Desktop/personal/smtf-dashboard/packages/ui-library/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "/Users/kkrutul/Desktop/personal/smtf-dashboard/node_modules/prettier",
     "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Users/kkrutul/Desktop/personal/smtf-dashboard/packages/ui-library/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/kkrutul/Desktop/personal/smtf-dashboard/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
