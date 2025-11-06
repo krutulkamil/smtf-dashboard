@@ -20,7 +20,7 @@
     "**/*.css"
   ],
   "scripts": {
-    "build": "vite build && tsc -p tsconfig.build.json && pnpm run build:stencil",
+    "build": "pnpm run build:stencil && vite build && tsc -p tsconfig.build.json",
     "build:stencil": "cd stencil && stencil build",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
